@@ -1,0 +1,37 @@
+[
+  {
+    "id": "math",
+    "name": "数学基础",
+    "english": "MATHEMATICS",
+    "color": "#8a6399",
+    "description": "用定义、集合与证明搭起基础。"
+  },
+  {
+    "id": "statistics",
+    "name": "概率与统计",
+    "english": "PROBABILITY & STATISTICS",
+    "color": "#258575",
+    "description": "理解随机性，建立概率模型。"
+  },
+  {
+    "id": "cs",
+    "name": "计算机基础",
+    "english": "COMPUTER SCIENCE",
+    "color": "#3a79ad",
+    "description": "算法如何工作，计算的边界在哪里。"
+  },
+  {
+    "id": "engineering",
+    "name": "编程与工程",
+    "english": "PROGRAMMING",
+    "color": "#b47b32",
+    "description": "把抽象概念落实为程序与系统。"
+  },
+  {
+    "id": "ai",
+    "name": "机器学习与 AI",
+    "english": "MACHINE LEARNING",
+    "color": "#b06078",
+    "description": "从学习原理走向大模型系统。"
+  }
+]

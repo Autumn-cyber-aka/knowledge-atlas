@@ -1,0 +1,900 @@
+[
+  {
+    "id": "sets",
+    "title": "集合与关系",
+    "english": "Sets & relations",
+    "domain": "math",
+    "tags": [],
+    "topic": "离散数学",
+    "sources": [
+      "coms3261"
+    ],
+    "coverage": "recorded",
+    "mastery": "unassessed",
+    "summary": "用集合描述对象，用关系描述对象之间的联系，是形式语言与计算模型的表达基础。",
+    "personalNote": "",
+    "related": [
+      "formal-languages",
+      "proofs"
+    ],
+    "evidence": "离散数学先修复习；仅收录知识范围，未确认掌握。",
+    "recordedAt": "2026-09-15"
+  },
+  {
+    "id": "proofs",
+    "title": "数学证明",
+    "english": "Mathematical proofs",
+    "domain": "math",
+    "tags": [],
+    "topic": "离散数学",
+    "sources": [
+      "coms3261"
+    ],
+    "coverage": "recorded",
+    "mastery": "unassessed",
+    "summary": "从明确的定义和假设出发，通过逻辑推理建立结论；常见方法包括归纳、反证与构造。",
+    "personalNote": "",
+    "related": [
+      "recursion",
+      "sets"
+    ],
+    "evidence": "课程学习目标与离散数学复习。",
+    "recordedAt": "2026-09-15"
+  },
+  {
+    "id": "conditional-probability",
+    "title": "条件概率",
+    "english": "Conditional probability",
+    "domain": "statistics",
+    "tags": [],
+    "topic": "概率基础",
+    "sources": [
+      "stat4207"
+    ],
+    "coverage": "recorded",
+    "mastery": "unassessed",
+    "summary": "在事件 B 已发生的条件下重新计算事件 A 的概率；当 P(B)>0 时，P(A|B)=P(A∩B)/P(B)。",
+    "personalNote": "",
+    "related": [
+      "random-variables",
+      "expectation"
+    ],
+    "evidence": "概率复习范围；依据课程资料整理。",
+    "recordedAt": "2026-09-15"
+  },
+  {
+    "id": "random-variables",
+    "title": "随机变量",
+    "english": "Random variables",
+    "domain": "statistics",
+    "tags": [],
+    "topic": "概率基础",
+    "sources": [
+      "stat4207"
+    ],
+    "coverage": "recorded",
+    "mastery": "unassessed",
+    "summary": "把随机试验的结果映射为数值，并用分布描述这些数值出现的概率。",
+    "personalNote": "",
+    "related": [
+      "expectation",
+      "conditional-probability"
+    ],
+    "evidence": "概率复习范围；依据课程资料整理。",
+    "recordedAt": "2026-09-15"
+  },
+  {
+    "id": "expectation",
+    "title": "期望与条件期望",
+    "english": "Expectation",
+    "domain": "statistics",
+    "tags": [],
+    "topic": "概率基础",
+    "sources": [
+      "stat4207"
+    ],
+    "coverage": "recorded",
+    "mastery": "unassessed",
+    "summary": "期望描述随机变量按概率加权的平均值；条件期望描述给定信息后的平均值。",
+    "personalNote": "",
+    "related": [
+      "random-variables",
+      "generalization"
+    ],
+    "evidence": "概率复习范围；依据课程资料整理。",
+    "recordedAt": "2026-09-15"
+  },
+  {
+    "id": "recursion",
+    "title": "递归",
+    "english": "Recursion",
+    "domain": "cs",
+    "tags": [],
+    "topic": "数据结构与算法",
+    "sources": [
+      "coms3134"
+    ],
+    "coverage": "recorded",
+    "mastery": "unassessed",
+    "summary": "把问题化为更小的同类问题，并用明确的终止条件结束求解。",
+    "personalNote": "",
+    "related": [
+      "binary-search",
+      "proofs"
+    ],
+    "evidence": "已发布大纲中的九月基础主题；学习进度待本人确认。",
+    "recordedAt": "2026-09-15"
+  },
+  {
+    "id": "binary-search",
+    "title": "二分查找",
+    "english": "Binary search",
+    "domain": "cs",
+    "tags": [],
+    "topic": "数据结构与算法",
+    "sources": [
+      "coms3134"
+    ],
+    "coverage": "recorded",
+    "mastery": "unassessed",
+    "summary": "在有序的搜索区间中不断排除一半候选项；区间边界与终止条件决定实现是否正确。",
+    "personalNote": "",
+    "related": [
+      "recursion",
+      "arrays"
+    ],
+    "evidence": "已发布大纲中的九月基础主题；学习进度待本人确认。",
+    "recordedAt": "2026-09-15"
+  },
+  {
+    "id": "formal-languages",
+    "title": "形式语言",
+    "english": "Formal languages",
+    "domain": "cs",
+    "tags": [],
+    "topic": "计算理论",
+    "sources": [
+      "coms3261"
+    ],
+    "coverage": "recorded",
+    "mastery": "unassessed",
+    "summary": "字母表上的有限符号序列称为字符串，字符串的集合称为语言。",
+    "personalNote": "",
+    "related": [
+      "sets",
+      "dfa"
+    ],
+    "evidence": "已发布课程摘要包含字母表、字符串与语言。",
+    "recordedAt": "2026-09-15"
+  },
+  {
+    "id": "dfa",
+    "title": "有限自动机 DFA",
+    "english": "Deterministic finite automata",
+    "domain": "cs",
+    "tags": [],
+    "topic": "计算理论",
+    "sources": [
+      "coms3261"
+    ],
+    "coverage": "recorded",
+    "mastery": "unassessed",
+    "summary": "用有限状态和确定的转移规则读取输入，通过最终所处的状态判断是否接受字符串。",
+    "personalNote": "",
+    "related": [
+      "formal-languages",
+      "regular-languages"
+    ],
+    "evidence": "已发布课程摘要包含 DFA 的形式定义与识别语言。",
+    "recordedAt": "2026-09-15"
+  },
+  {
+    "id": "regular-languages",
+    "title": "正则语言",
+    "english": "Regular languages",
+    "domain": "cs",
+    "tags": [],
+    "topic": "计算理论",
+    "sources": [
+      "coms3261"
+    ],
+    "coverage": "recorded",
+    "mastery": "unassessed",
+    "summary": "能够被某个确定有限自动机识别的语言；研究它们能表达什么，以及表达能力的限制。",
+    "personalNote": "",
+    "related": [
+      "dfa"
+    ],
+    "evidence": "已发布课程摘要包含正则语言定义。",
+    "recordedAt": "2026-09-15"
+  },
+  {
+    "id": "java-interfaces",
+    "title": "Java 接口",
+    "english": "Java interfaces",
+    "domain": "engineering",
+    "tags": [],
+    "topic": "Java",
+    "sources": [
+      "coms3134"
+    ],
+    "coverage": "recorded",
+    "mastery": "unassessed",
+    "summary": "通过接口约定对象提供哪些操作，让使用方依赖行为契约，而不是某种具体实现。",
+    "personalNote": "",
+    "related": [
+      "generics",
+      "arrays"
+    ],
+    "evidence": "九月 Java 复习与抽象数据类型主题。",
+    "recordedAt": "2026-09-15"
+  },
+  {
+    "id": "generics",
+    "title": "泛型",
+    "english": "Generics",
+    "domain": "engineering",
+    "tags": [],
+    "topic": "Java",
+    "sources": [
+      "coms3134"
+    ],
+    "coverage": "recorded",
+    "mastery": "unassessed",
+    "summary": "用类型参数表达可复用的结构与算法，同时保留编译期类型检查。",
+    "personalNote": "",
+    "related": [
+      "java-interfaces",
+      "arrays"
+    ],
+    "evidence": "九月 Java 接口与泛型主题。",
+    "recordedAt": "2026-09-15"
+  },
+  {
+    "id": "arrays",
+    "title": "数组与列表",
+    "english": "Arrays & lists",
+    "domain": "engineering",
+    "tags": [],
+    "topic": "数据表示",
+    "sources": [
+      "coms3134"
+    ],
+    "coverage": "recorded",
+    "mastery": "unassessed",
+    "summary": "用顺序结构组织多个元素；抽象操作与底层实现共同决定访问、插入和删除的成本。",
+    "personalNote": "",
+    "related": [
+      "binary-search",
+      "java-interfaces"
+    ],
+    "evidence": "九月列表与数组入门主题。",
+    "recordedAt": "2026-09-15"
+  },
+  {
+    "id": "bias-variance",
+    "title": "偏差与方差",
+    "english": "Bias & variance",
+    "domain": "ai",
+    "tags": [],
+    "topic": "学习原理",
+    "sources": [
+      "coms6998"
+    ],
+    "coverage": "recorded",
+    "mastery": "unassessed",
+    "summary": "区分模型的系统性误差与对训练样本变化的敏感性，帮助理解欠拟合和过拟合。",
+    "personalNote": "",
+    "related": [
+      "generalization",
+      "regularization"
+    ],
+    "evidence": "九月深度学习基础主题；仅收录，不代表已掌握。",
+    "recordedAt": "2026-09-15"
+  },
+  {
+    "id": "generalization",
+    "title": "泛化",
+    "english": "Generalization",
+    "domain": "ai",
+    "tags": [],
+    "topic": "学习原理",
+    "sources": [
+      "coms6998"
+    ],
+    "coverage": "recorded",
+    "mastery": "unassessed",
+    "summary": "关注模型在未见数据上的表现；训练集上的好结果并不自动意味着可以推广。",
+    "personalNote": "",
+    "related": [
+      "bias-variance",
+      "expectation"
+    ],
+    "evidence": "九月深度学习基础主题。",
+    "recordedAt": "2026-09-15"
+  },
+  {
+    "id": "regularization",
+    "title": "正则化",
+    "english": "Regularization",
+    "domain": "ai",
+    "tags": [],
+    "topic": "学习原理",
+    "sources": [
+      "coms6998"
+    ],
+    "coverage": "recorded",
+    "mastery": "unassessed",
+    "summary": "通过约束模型或训练过程抑制过拟合，具体选择需要结合任务与验证结果。",
+    "personalNote": "",
+    "related": [
+      "generalization",
+      "bias-variance"
+    ],
+    "evidence": "九月深度学习基础主题。",
+    "recordedAt": "2026-09-15"
+  },
+  {
+    "id": "data-parallel",
+    "title": "数据并行",
+    "english": "Data parallelism",
+    "domain": "ai",
+    "tags": [
+      "engineering"
+    ],
+    "topic": "训练系统",
+    "sources": [
+      "coms6998"
+    ],
+    "coverage": "recorded",
+    "mastery": "unassessed",
+    "summary": "多个设备保存模型副本，处理不同数据批次，再聚合更新信息。",
+    "personalNote": "",
+    "related": [
+      "model-parallel"
+    ],
+    "evidence": "九月单机与分布式训练主题。",
+    "recordedAt": "2026-09-15"
+  },
+  {
+    "id": "model-parallel",
+    "title": "模型并行",
+    "english": "Model parallelism",
+    "domain": "ai",
+    "tags": [
+      "engineering"
+    ],
+    "topic": "训练系统",
+    "sources": [
+      "coms6998"
+    ],
+    "coverage": "recorded",
+    "mastery": "unassessed",
+    "summary": "把模型的不同部分分配到多个设备，缓解单设备容量限制，同时引入设备间通信。",
+    "personalNote": "",
+    "related": [
+      "data-parallel"
+    ],
+    "evidence": "九月单机与分布式训练主题。",
+    "recordedAt": "2026-09-15"
+  },
+  {
+    "id": "complexity",
+    "title": "算法复杂度",
+    "english": "Asymptotic complexity",
+    "domain": "cs",
+    "tags": [],
+    "topic": "数据结构与算法",
+    "sources": [
+      "coms3134"
+    ],
+    "coverage": "planned",
+    "mastery": "unassessed",
+    "summary": "用输入规模刻画算法的时间和空间成本，区分渐近上界、下界与紧确界。",
+    "personalNote": "",
+    "related": [
+      "binary-search"
+    ],
+    "evidence": "后续大纲主题。",
+    "recordedAt": "2026-09-15"
+  },
+  {
+    "id": "linked-lists",
+    "title": "链表",
+    "english": "Linked lists",
+    "domain": "cs",
+    "tags": [],
+    "topic": "数据结构与算法",
+    "sources": [
+      "coms3134"
+    ],
+    "coverage": "planned",
+    "mastery": "unassessed",
+    "summary": "通过节点之间的引用连接元素，分析其访问成本及插入、删除时的边界。",
+    "personalNote": "",
+    "related": [
+      "arrays"
+    ],
+    "evidence": "后续大纲主题。",
+    "recordedAt": "2026-09-15"
+  },
+  {
+    "id": "stacks-queues",
+    "title": "栈与队列",
+    "english": "Stacks & queues",
+    "domain": "cs",
+    "tags": [],
+    "topic": "数据结构与算法",
+    "sources": [
+      "coms3134"
+    ],
+    "coverage": "planned",
+    "mastery": "unassessed",
+    "summary": "分别以先进后出和先进先出的顺序管理元素，为遍历、调度与表达式处理提供基础。",
+    "personalNote": "",
+    "related": [
+      "linked-lists",
+      "recursion"
+    ],
+    "evidence": "后续大纲主题。",
+    "recordedAt": "2026-09-15"
+  },
+  {
+    "id": "trees",
+    "title": "搜索树与平衡树",
+    "english": "Search trees",
+    "domain": "cs",
+    "tags": [],
+    "topic": "数据结构与算法",
+    "sources": [
+      "coms3134"
+    ],
+    "coverage": "planned",
+    "mastery": "unassessed",
+    "summary": "以树结构组织有序数据，并通过平衡约束控制查找、插入和删除的路径长度。",
+    "personalNote": "",
+    "related": [
+      "recursion",
+      "complexity"
+    ],
+    "evidence": "后续大纲主题。",
+    "recordedAt": "2026-09-15"
+  },
+  {
+    "id": "hashing",
+    "title": "哈希表",
+    "english": "Hash tables",
+    "domain": "cs",
+    "tags": [],
+    "topic": "数据结构与算法",
+    "sources": [
+      "coms3134"
+    ],
+    "coverage": "planned",
+    "mastery": "unassessed",
+    "summary": "用哈希函数把键映射到存储位置，并通过冲突处理维持查找与更新。",
+    "personalNote": "",
+    "related": [
+      "arrays",
+      "complexity"
+    ],
+    "evidence": "后续大纲主题。",
+    "recordedAt": "2026-09-15"
+  },
+  {
+    "id": "graphs",
+    "title": "图与图算法",
+    "english": "Graph algorithms",
+    "domain": "cs",
+    "tags": [],
+    "topic": "数据结构与算法",
+    "sources": [
+      "coms3134"
+    ],
+    "coverage": "planned",
+    "mastery": "unassessed",
+    "summary": "用节点和边建模关系，通过遍历、最短路径与生成树等算法解决结构问题。",
+    "personalNote": "",
+    "related": [
+      "stacks-queues",
+      "sets"
+    ],
+    "evidence": "后续大纲主题。",
+    "recordedAt": "2026-09-15"
+  },
+  {
+    "id": "dynamic-programming",
+    "title": "动态规划",
+    "english": "Dynamic programming",
+    "domain": "cs",
+    "tags": [],
+    "topic": "算法设计",
+    "sources": [
+      "coms3134"
+    ],
+    "coverage": "planned",
+    "mastery": "unassessed",
+    "summary": "把问题分解为可复用的子问题，定义状态与转移，并保存结果以减少重复计算。",
+    "personalNote": "",
+    "related": [
+      "recursion",
+      "complexity"
+    ],
+    "evidence": "后续大纲主题。",
+    "recordedAt": "2026-09-15"
+  },
+  {
+    "id": "computability",
+    "title": "可计算性",
+    "english": "Computability",
+    "domain": "cs",
+    "tags": [],
+    "topic": "计算理论",
+    "sources": [
+      "coms3261"
+    ],
+    "coverage": "planned",
+    "mastery": "unassessed",
+    "summary": "研究哪些问题能够由算法解决，区分可识别、可判定与不可判定。",
+    "personalNote": "",
+    "related": [
+      "formal-languages",
+      "proofs"
+    ],
+    "evidence": "课程后续学习目标。",
+    "recordedAt": "2026-09-15"
+  },
+  {
+    "id": "reductions",
+    "title": "归约",
+    "english": "Reductions",
+    "domain": "cs",
+    "tags": [],
+    "topic": "计算理论",
+    "sources": [
+      "coms3261"
+    ],
+    "coverage": "planned",
+    "mastery": "unassessed",
+    "summary": "通过把一个问题转换成另一个问题，比较它们的可解性或计算难度。",
+    "personalNote": "",
+    "related": [
+      "computability",
+      "proofs"
+    ],
+    "evidence": "课程贯穿性学习目标，个人进度尚未确认。",
+    "recordedAt": "2026-09-15"
+  },
+  {
+    "id": "p-np",
+    "title": "P、NP 与 NP 完全性",
+    "english": "P, NP & NP-completeness",
+    "domain": "cs",
+    "tags": [],
+    "topic": "计算理论",
+    "sources": [
+      "coms3261"
+    ],
+    "coverage": "planned",
+    "mastery": "unassessed",
+    "summary": "区分多项式时间内可求解与可验证的问题，并用归约研究 NP 完全问题。",
+    "personalNote": "",
+    "related": [
+      "reductions",
+      "complexity"
+    ],
+    "evidence": "课程后续学习目标。",
+    "recordedAt": "2026-09-15"
+  },
+  {
+    "id": "exponential",
+    "title": "指数分布",
+    "english": "Exponential distribution",
+    "domain": "statistics",
+    "tags": [],
+    "topic": "随机过程",
+    "sources": [
+      "stat4207"
+    ],
+    "coverage": "planned",
+    "mastery": "unassessed",
+    "summary": "一种连续等待时间分布，具有无记忆性，是泊松过程与连续时间模型的重要基础。",
+    "personalNote": "",
+    "related": [
+      "random-variables"
+    ],
+    "evidence": "后续大纲主题。",
+    "recordedAt": "2026-09-15"
+  },
+  {
+    "id": "poisson",
+    "title": "泊松过程",
+    "english": "Poisson processes",
+    "domain": "statistics",
+    "tags": [],
+    "topic": "随机过程",
+    "sources": [
+      "stat4207"
+    ],
+    "coverage": "planned",
+    "mastery": "unassessed",
+    "summary": "对随机事件随时间发生的次数建模；齐次模型具有平稳且独立的增量。",
+    "personalNote": "",
+    "related": [
+      "exponential",
+      "conditional-probability"
+    ],
+    "evidence": "后续大纲主题。",
+    "recordedAt": "2026-09-15"
+  },
+  {
+    "id": "renewal",
+    "title": "更新过程与更新奖励",
+    "english": "Renewal processes",
+    "domain": "statistics",
+    "tags": [],
+    "topic": "随机过程",
+    "sources": [
+      "stat4207"
+    ],
+    "coverage": "planned",
+    "mastery": "unassessed",
+    "summary": "以重复出现的随机周期组织过程，并研究长期事件频率及每单位时间的奖励。",
+    "personalNote": "",
+    "related": [
+      "poisson",
+      "expectation"
+    ],
+    "evidence": "后续大纲主题。",
+    "recordedAt": "2026-09-15"
+  },
+  {
+    "id": "wald",
+    "title": "Wald 等式",
+    "english": "Wald’s equation",
+    "domain": "statistics",
+    "tags": [],
+    "topic": "随机过程",
+    "sources": [
+      "stat4207"
+    ],
+    "coverage": "planned",
+    "mastery": "unassessed",
+    "summary": "在适当独立性、停止时刻与可积性条件下，联系随机项数之和的期望与单项期望。",
+    "personalNote": "",
+    "related": [
+      "expectation",
+      "renewal"
+    ],
+    "evidence": "后续大纲主题。",
+    "recordedAt": "2026-09-15"
+  },
+  {
+    "id": "markov",
+    "title": "离散时间马尔可夫链",
+    "english": "Discrete-time Markov chains",
+    "domain": "statistics",
+    "tags": [],
+    "topic": "随机过程",
+    "sources": [
+      "stat4207"
+    ],
+    "coverage": "planned",
+    "mastery": "unassessed",
+    "summary": "用当前状态决定下一步的条件分布，研究转移矩阵、状态分类与平稳分布。",
+    "personalNote": "",
+    "related": [
+      "conditional-probability"
+    ],
+    "evidence": "后续大纲主题。",
+    "recordedAt": "2026-09-15"
+  },
+  {
+    "id": "ctmc",
+    "title": "连续时间马尔可夫链",
+    "english": "Continuous-time Markov chains",
+    "domain": "statistics",
+    "tags": [],
+    "topic": "随机过程",
+    "sources": [
+      "stat4207"
+    ],
+    "coverage": "planned",
+    "mastery": "unassessed",
+    "summary": "在连续时间中描述状态跳转，用转移速率和等待时间建立模型。",
+    "personalNote": "",
+    "related": [
+      "markov",
+      "exponential"
+    ],
+    "evidence": "后续大纲主题。",
+    "recordedAt": "2026-09-15"
+  },
+  {
+    "id": "queues",
+    "title": "排队模型",
+    "english": "Queueing models",
+    "domain": "statistics",
+    "tags": [],
+    "topic": "随机建模",
+    "sources": [
+      "stat4207"
+    ],
+    "coverage": "planned",
+    "mastery": "unassessed",
+    "summary": "用到达、服务与排队规则描述系统，分析等待时间和资源利用情况。",
+    "personalNote": "",
+    "related": [
+      "ctmc",
+      "poisson"
+    ],
+    "evidence": "后续大纲主题。",
+    "recordedAt": "2026-09-15"
+  },
+  {
+    "id": "attention",
+    "title": "注意力机制",
+    "english": "Attention",
+    "domain": "ai",
+    "tags": [],
+    "topic": "模型结构",
+    "sources": [
+      "coms6998"
+    ],
+    "coverage": "planned",
+    "mastery": "unassessed",
+    "summary": "通过查询与键的匹配分配权重，再聚合值向量，让模型按上下文选择信息。",
+    "personalNote": "",
+    "related": [
+      "transformer"
+    ],
+    "evidence": "后续大纲主题。",
+    "recordedAt": "2026-09-15"
+  },
+  {
+    "id": "transformer",
+    "title": "Transformer",
+    "english": "Transformer",
+    "domain": "ai",
+    "tags": [],
+    "topic": "模型结构",
+    "sources": [
+      "coms6998"
+    ],
+    "coverage": "planned",
+    "mastery": "unassessed",
+    "summary": "以注意力与前馈网络等模块构建序列模型，需要结合位置表示与训练目标理解。",
+    "personalNote": "",
+    "related": [
+      "attention",
+      "generalization"
+    ],
+    "evidence": "后续大纲主题。",
+    "recordedAt": "2026-09-15"
+  },
+  {
+    "id": "rag",
+    "title": "检索增强生成 RAG",
+    "english": "Retrieval-augmented generation",
+    "domain": "ai",
+    "tags": [],
+    "topic": "大模型应用",
+    "sources": [
+      "coms6998"
+    ],
+    "coverage": "planned",
+    "mastery": "unassessed",
+    "summary": "先检索相关资料，再把资料作为上下文交给生成模型，分别评估检索和回答质量。",
+    "personalNote": "",
+    "related": [
+      "transformer"
+    ],
+    "evidence": "后续大纲主题。",
+    "recordedAt": "2026-09-15"
+  },
+  {
+    "id": "evaluation",
+    "title": "大模型评估",
+    "english": "LLM evaluation",
+    "domain": "ai",
+    "tags": [],
+    "topic": "评估",
+    "sources": [
+      "coms6998"
+    ],
+    "coverage": "planned",
+    "mastery": "unassessed",
+    "summary": "同时评估回答质量与系统表现，结合任务指标、未见数据和资源成本选择方案。",
+    "personalNote": "",
+    "related": [
+      "generalization",
+      "rag"
+    ],
+    "evidence": "后续大纲主题。",
+    "recordedAt": "2026-09-15"
+  },
+  {
+    "id": "lora",
+    "title": "参数高效微调 LoRA",
+    "english": "Low-rank adaptation",
+    "domain": "ai",
+    "tags": [],
+    "topic": "模型训练",
+    "sources": [
+      "coms6998"
+    ],
+    "coverage": "planned",
+    "mastery": "unassessed",
+    "summary": "保持基础权重固定，通过可训练的低秩更新适配任务，降低需要训练的参数量。",
+    "personalNote": "",
+    "related": [
+      "transformer"
+    ],
+    "evidence": "后续大纲主题。",
+    "recordedAt": "2026-09-15"
+  },
+  {
+    "id": "serving",
+    "title": "推理与服务优化",
+    "english": "Efficient LLM serving",
+    "domain": "ai",
+    "tags": [
+      "engineering"
+    ],
+    "topic": "推理系统",
+    "sources": [
+      "coms6998"
+    ],
+    "coverage": "planned",
+    "mastery": "unassessed",
+    "summary": "结合批处理、缓存与内存管理，在延迟、吞吐量和资源使用之间做权衡。",
+    "personalNote": "",
+    "related": [
+      "transformer",
+      "data-parallel"
+    ],
+    "evidence": "后续大纲主题。",
+    "recordedAt": "2026-09-15"
+  },
+  {
+    "id": "rlhf",
+    "title": "人类反馈强化学习",
+    "english": "RLHF",
+    "domain": "ai",
+    "tags": [],
+    "topic": "模型对齐",
+    "sources": [
+      "coms6998"
+    ],
+    "coverage": "planned",
+    "mastery": "unassessed",
+    "summary": "利用偏好反馈建立奖励信号，再优化模型行为；需同时关注奖励偏差与评估。",
+    "personalNote": "",
+    "related": [
+      "evaluation"
+    ],
+    "evidence": "后续大纲主题。",
+    "recordedAt": "2026-09-15"
+  },
+  {
+    "id": "agents",
+    "title": "工具调用与 Agent",
+    "english": "Tool use & agents",
+    "domain": "ai",
+    "tags": [],
+    "topic": "大模型应用",
+    "sources": [
+      "coms6998"
+    ],
+    "coverage": "planned",
+    "mastery": "unassessed",
+    "summary": "让模型通过工具获取信息或执行操作，并围绕目标组织多步决策。",
+    "personalNote": "",
+    "related": [
+      "rag",
+      "evaluation"
+    ],
+    "evidence": "后续大纲主题。",
+    "recordedAt": "2026-09-15"
+  }
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "id": "coms3134",
+    "label": "COMS 3134",
+    "title": "数据结构与算法",
+    "name": "Data Structures in Java",
+    "kind": "course",
+    "term": "2026 Fall",
+    "repository": "https://github.com/Autumn-cyber-aka/26fall-coms3134",
+    "reference": "materials/syllabus-2026-09-13.txt",
+    "private": true
+  },
+  {
+    "id": "coms3261",
+    "label": "COMS 3261",
+    "title": "计算理论",
+    "name": "Computer Science Theory",
+    "kind": "course",
+    "term": "2026 Fall",
+    "repository": "https://github.com/Autumn-cyber-aka/26fall-coms3261",
+    "reference": "materials/syllabus-2026-09-13.txt",
+    "private": true
+  },
+  {
+    "id": "coms6998",
+    "label": "COMS 6998 · LLM",
+    "title": "大语言模型与生成式 AI 系统",
+    "name": "Introduction to LLM based Generative AI Systems",
+    "kind": "course",
+    "term": "2026 Fall",
+    "repository": "https://github.com/Autumn-cyber-aka/26fall-coms6998-LLM",
+    "reference": "materials/COMSE6998_007_2026_3_syllabus.txt",
+    "private": true
+  },
+  {
+    "id": "stat4207",
+    "label": "STAT 4207",
+    "title": "初等随机过程",
+    "name": "Elementary Stochastic Processes",
+    "kind": "course",
+    "term": "2026 Fall",
+    "repository": "https://github.com/Autumn-cyber-aka/26fall-stat4207",
+    "reference": "materials/GU4207_Fall2026_Lecture_Plan.txt",
+    "private": true
+  }
+]
