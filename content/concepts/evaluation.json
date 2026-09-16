@@ -1,0 +1,22 @@
+{
+  "id": "evaluation",
+  "title": "大模型评估",
+  "english": "LLM evaluation",
+  "domain": "ai",
+  "tags": [],
+  "topic": "评估",
+  "sources": [
+    "coms6998"
+  ],
+  "coverage": "planned",
+  "mastery": "unassessed",
+  "summary": "同时评估回答质量与系统表现，结合任务指标、未见数据和资源成本选择方案。",
+  "personalNote": "",
+  "related": [
+    "generalization",
+    "rag"
+  ],
+  "evidence": "后续大纲主题。",
+  "recordedAt": "2026-09-15",
+  "order": 38
+}

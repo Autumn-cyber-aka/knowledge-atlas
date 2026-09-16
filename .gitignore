@@ -38,3 +38,6 @@ next-env.d.ts
 /work/
 /.pnpm-store/
 *.tsbuildinfo
+
+# Rebuilt automatically from modular content
+/.generated/

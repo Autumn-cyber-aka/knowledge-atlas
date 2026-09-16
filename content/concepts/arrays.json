@@ -1,0 +1,22 @@
+{
+  "id": "arrays",
+  "title": "数组与列表",
+  "english": "Arrays & lists",
+  "domain": "engineering",
+  "tags": [],
+  "topic": "数据表示",
+  "sources": [
+    "coms3134"
+  ],
+  "coverage": "recorded",
+  "mastery": "unassessed",
+  "summary": "用顺序结构组织多个元素；抽象操作与底层实现共同决定访问、插入和删除的成本。",
+  "personalNote": "",
+  "related": [
+    "binary-search",
+    "java-interfaces"
+  ],
+  "evidence": "九月列表与数组入门主题。",
+  "recordedAt": "2026-09-15",
+  "order": 12
+}

@@ -1,0 +1,22 @@
+{
+  "id": "conditional-probability",
+  "title": "条件概率",
+  "english": "Conditional probability",
+  "domain": "statistics",
+  "tags": [],
+  "topic": "概率基础",
+  "sources": [
+    "stat4207"
+  ],
+  "coverage": "recorded",
+  "mastery": "unassessed",
+  "summary": "在事件 B 已发生的条件下重新计算事件 A 的概率；当 P(B)>0 时，P(A|B)=P(A∩B)/P(B)。",
+  "personalNote": "",
+  "related": [
+    "random-variables",
+    "expectation"
+  ],
+  "evidence": "概率复习范围；依据课程资料整理。",
+  "recordedAt": "2026-09-15",
+  "order": 2
+}

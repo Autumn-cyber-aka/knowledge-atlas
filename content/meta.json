@@ -2,9 +2,10 @@
   "owner": "Jianchen Lyu",
   "github": "Autumn-cyber-aka",
   "startedAt": "2026-09",
-  "updatedAt": "2026-09-15",
+  "updatedAt": "2026-09-16",
   "excludedSources": [
     "stat4205"
   ],
-  "scope": "从 2026 年 9 月开始记录。此前的学习经历后续补充。"
+  "scope": "从 2026 年 9 月开始记录。此前的学习经历后续补充。",
+  "schemaVersion": 1
 }

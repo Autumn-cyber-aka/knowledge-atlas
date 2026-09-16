@@ -1,0 +1,23 @@
+{
+  "id": "data-parallel",
+  "title": "数据并行",
+  "english": "Data parallelism",
+  "domain": "ai",
+  "tags": [
+    "engineering"
+  ],
+  "topic": "训练系统",
+  "sources": [
+    "coms6998"
+  ],
+  "coverage": "recorded",
+  "mastery": "unassessed",
+  "summary": "多个设备保存模型副本，处理不同数据批次，再聚合更新信息。",
+  "personalNote": "",
+  "related": [
+    "model-parallel"
+  ],
+  "evidence": "九月单机与分布式训练主题。",
+  "recordedAt": "2026-09-15",
+  "order": 16
+}

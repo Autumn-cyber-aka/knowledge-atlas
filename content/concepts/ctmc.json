@@ -1,0 +1,22 @@
+{
+  "id": "ctmc",
+  "title": "连续时间马尔可夫链",
+  "english": "Continuous-time Markov chains",
+  "domain": "statistics",
+  "tags": [],
+  "topic": "随机过程",
+  "sources": [
+    "stat4207"
+  ],
+  "coverage": "planned",
+  "mastery": "unassessed",
+  "summary": "在连续时间中描述状态跳转，用转移速率和等待时间建立模型。",
+  "personalNote": "",
+  "related": [
+    "markov",
+    "exponential"
+  ],
+  "evidence": "后续大纲主题。",
+  "recordedAt": "2026-09-15",
+  "order": 33
+}

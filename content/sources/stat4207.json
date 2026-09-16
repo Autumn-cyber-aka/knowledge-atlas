@@ -1,0 +1,15 @@
+{
+  "id": "stat4207",
+  "label": "STAT 4207",
+  "title": "初等随机过程",
+  "name": "Elementary Stochastic Processes",
+  "kind": "course",
+  "term": "2026 Fall",
+  "private": true,
+  "order": 3,
+  "url": "https://github.com/Autumn-cyber-aka/26fall-stat4207",
+  "referenceUrl": "https://github.com/Autumn-cyber-aka/26fall-stat4207/blob/main/materials/GU4207_Fall2026_Lecture_Plan.txt",
+  "institution": "哥大",
+  "format": "course",
+  "accessNote": "私有仓库 · 需要相应 GitHub 访问权限"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "proofs",
+  "title": "数学证明",
+  "english": "Mathematical proofs",
+  "domain": "math",
+  "tags": [],
+  "topic": "离散数学",
+  "sources": [
+    "coms3261"
+  ],
+  "coverage": "recorded",
+  "mastery": "unassessed",
+  "summary": "从明确的定义和假设出发，通过逻辑推理建立结论；常见方法包括归纳、反证与构造。",
+  "personalNote": "",
+  "related": [
+    "recursion",
+    "sets"
+  ],
+  "evidence": "课程学习目标与离散数学复习。",
+  "recordedAt": "2026-09-15",
+  "order": 1
+}

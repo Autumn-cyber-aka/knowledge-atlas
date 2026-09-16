@@ -1,0 +1,22 @@
+{
+  "id": "random-variables",
+  "title": "随机变量",
+  "english": "Random variables",
+  "domain": "statistics",
+  "tags": [],
+  "topic": "概率基础",
+  "sources": [
+    "stat4207"
+  ],
+  "coverage": "recorded",
+  "mastery": "unassessed",
+  "summary": "把随机试验的结果映射为数值，并用分布描述这些数值出现的概率。",
+  "personalNote": "",
+  "related": [
+    "expectation",
+    "conditional-probability"
+  ],
+  "evidence": "概率复习范围；依据课程资料整理。",
+  "recordedAt": "2026-09-15",
+  "order": 3
+}

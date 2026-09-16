@@ -1,0 +1,15 @@
+{
+  "id": "coms3261",
+  "label": "COMS 3261",
+  "title": "计算理论",
+  "name": "Computer Science Theory",
+  "kind": "course",
+  "term": "2026 Fall",
+  "private": true,
+  "order": 1,
+  "url": "https://github.com/Autumn-cyber-aka/26fall-coms3261",
+  "referenceUrl": "https://github.com/Autumn-cyber-aka/26fall-coms3261/blob/main/materials/syllabus-2026-09-13.txt",
+  "institution": "哥大",
+  "format": "course",
+  "accessNote": "私有仓库 · 需要相应 GitHub 访问权限"
+}

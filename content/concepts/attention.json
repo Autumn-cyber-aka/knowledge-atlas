@@ -1,0 +1,21 @@
+{
+  "id": "attention",
+  "title": "注意力机制",
+  "english": "Attention",
+  "domain": "ai",
+  "tags": [],
+  "topic": "模型结构",
+  "sources": [
+    "coms6998"
+  ],
+  "coverage": "planned",
+  "mastery": "unassessed",
+  "summary": "通过查询与键的匹配分配权重，再聚合值向量，让模型按上下文选择信息。",
+  "personalNote": "",
+  "related": [
+    "transformer"
+  ],
+  "evidence": "后续大纲主题。",
+  "recordedAt": "2026-09-15",
+  "order": 35
+}

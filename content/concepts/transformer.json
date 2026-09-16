@@ -1,0 +1,22 @@
+{
+  "id": "transformer",
+  "title": "Transformer",
+  "english": "Transformer",
+  "domain": "ai",
+  "tags": [],
+  "topic": "模型结构",
+  "sources": [
+    "coms6998"
+  ],
+  "coverage": "planned",
+  "mastery": "unassessed",
+  "summary": "以注意力与前馈网络等模块构建序列模型，需要结合位置表示与训练目标理解。",
+  "personalNote": "",
+  "related": [
+    "attention",
+    "generalization"
+  ],
+  "evidence": "后续大纲主题。",
+  "recordedAt": "2026-09-15",
+  "order": 36
+}

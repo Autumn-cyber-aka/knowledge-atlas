@@ -1,0 +1,22 @@
+{
+  "id": "stacks-queues",
+  "title": "栈与队列",
+  "english": "Stacks & queues",
+  "domain": "cs",
+  "tags": [],
+  "topic": "数据结构与算法",
+  "sources": [
+    "coms3134"
+  ],
+  "coverage": "planned",
+  "mastery": "unassessed",
+  "summary": "分别以先进后出和先进先出的顺序管理元素，为遍历、调度与表达式处理提供基础。",
+  "personalNote": "",
+  "related": [
+    "linked-lists",
+    "recursion"
+  ],
+  "evidence": "后续大纲主题。",
+  "recordedAt": "2026-09-15",
+  "order": 20
+}

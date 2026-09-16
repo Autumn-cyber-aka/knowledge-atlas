@@ -1,0 +1,22 @@
+{
+  "id": "poisson",
+  "title": "泊松过程",
+  "english": "Poisson processes",
+  "domain": "statistics",
+  "tags": [],
+  "topic": "随机过程",
+  "sources": [
+    "stat4207"
+  ],
+  "coverage": "planned",
+  "mastery": "unassessed",
+  "summary": "对随机事件随时间发生的次数建模；齐次模型具有平稳且独立的增量。",
+  "personalNote": "",
+  "related": [
+    "exponential",
+    "conditional-probability"
+  ],
+  "evidence": "后续大纲主题。",
+  "recordedAt": "2026-09-15",
+  "order": 29
+}

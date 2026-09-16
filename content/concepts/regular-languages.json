@@ -1,0 +1,21 @@
+{
+  "id": "regular-languages",
+  "title": "正则语言",
+  "english": "Regular languages",
+  "domain": "cs",
+  "tags": [],
+  "topic": "计算理论",
+  "sources": [
+    "coms3261"
+  ],
+  "coverage": "recorded",
+  "mastery": "unassessed",
+  "summary": "能够被某个确定有限自动机识别的语言；研究它们能表达什么，以及表达能力的限制。",
+  "personalNote": "",
+  "related": [
+    "dfa"
+  ],
+  "evidence": "已发布课程摘要包含正则语言定义。",
+  "recordedAt": "2026-09-15",
+  "order": 9
+}

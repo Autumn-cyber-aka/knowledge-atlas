@@ -16,14 +16,12 @@ import {
   Check,
   CircleDashed,
   Code2,
-  ExternalLink,
   GitBranch,
   GraduationCap,
   Layers3,
   List,
   Network,
   Search,
-  Sparkles,
   X,
 } from 'lucide-react';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
@@ -43,12 +41,19 @@ import {
 } from '@/components/ui/select';
 import { Switch } from '@/components/ui/switch';
 import { Input } from '@/components/ui/input';
-import domains from '@/content/domains.json';
-import sources from '@/content/sources.json';
-import allConcepts from '@/content/concepts.json';
-import meta from '@/content/meta.json';
+import {
+  domains,
+  sources,
+  concepts as allConcepts,
+  meta,
+  courseCount,
+  selfCount,
+  startLabel,
+  type Concept,
+} from '@/lib/catalog';
+import { SourceCatalog } from '@/components/atlas/source-catalog';
+import { SourceReference } from '@/components/atlas/source-reference';
 
-type Concept = (typeof allConcepts)[number];
 const domainById = new Map(domains.map((d) => [d.id, d]));
 const conceptById = new Map(allConcepts.map((c) => [c.id, c]));
 const masteryLabels: Record<string, string> = {
@@ -61,7 +66,7 @@ const masteryLabels: Record<string, string> = {
 const recorded = allConcepts.filter((c) => c.coverage === 'recorded');
 const selectedSources = [
   { value: 'all', label: '全部学习来源' },
-  { value: 'course', label: '哥大课程' },
+  { value: 'course', label: '课程学习' },
   { value: 'self', label: '自主学习' },
   ...sources.map((s) => ({ value: s.id, label: s.label })),
 ];
@@ -307,7 +312,7 @@ export default function Home() {
           <Network size={23} strokeWidth={1.6} /> ATLAS<span>/ Jianchen</span>
         </Link>
         <div className="top-right">
-          <span className="edition">个人知识档案 · 2026 FALL</span>
+          <span className="edition">个人知识档案 · 持续积累</span>
           <a
             href="https://github.com/Autumn-cyber-aka/knowledge-atlas"
             target="_blank"
@@ -326,14 +331,14 @@ export default function Home() {
           <p>从课程到自学，把知识连接成自己的体系。</p>
         </div>
         <div className="date-stamp">
-          SINCE <strong>2026.09</strong>
-          <span>从这个九月开始记录</span>
+          SINCE <strong>{meta.startedAt.replace('-', '.')}</strong>
+          <span>从这里开始，逐步生长</span>
         </div>
       </section>
       <div className="scope-note">
         <span className="scope-dot" />
         <span>
-          记录始于 <strong>2026 年 9 月</strong>，此前的学习经历后续补充。
+          记录始于 <strong>{startLabel}</strong>，此前的学习经历后续补充。
         </span>
         <span className="scope-secondary">
           已收录 ≠ 已掌握 · 掌握程度待自评
@@ -365,7 +370,13 @@ export default function Home() {
           </TabsList>
           <div className="totals">
             <strong>{recorded.length}</strong> 个已收录知识点<span>/</span>
-            <strong>{sources.length}</strong> 门课程
+            <strong>{courseCount}</strong> 门课程
+            {selfCount > 0 && (
+              <>
+                <span>/</span>
+                <strong>{selfCount}</strong> 个自学来源
+              </>
+            )}
           </div>
         </div>
         {tab !== 'sources' && (
@@ -464,7 +475,10 @@ export default function Home() {
             {filtered.length ? (
               <KnowledgeMap concepts={filtered} onOpen={openConcept} />
             ) : (
-              <EmptyResults self={source === 'self'} clear={clear} />
+              <EmptyResults
+                self={source === 'self' && selfCount === 0}
+                clear={clear}
+              />
             )}
             <div className="surface-footer">
               <span aria-live="polite">显示 {filtered.length} 个知识点</span>
@@ -518,7 +532,10 @@ export default function Home() {
                 ) : null;
               })
             ) : (
-              <EmptyResults self={source === 'self'} clear={clear} />
+              <EmptyResults
+                self={source === 'self' && selfCount === 0}
+                clear={clear}
+              />
             )}
             <div className="surface-footer" aria-live="polite">
               显示 {filtered.length} 个知识点
@@ -526,84 +543,11 @@ export default function Home() {
           </section>
         </TabsContent>
         <TabsContent value="sources">
-          <section className="sources-view">
-            <div className="source-intro">
-              <div>
-                <p className="eyebrow">WHERE IT STARTED</p>
-                <h2>不同来源，同一张地图。</h2>
-                <p>
-                  课程与自学只是入口。知识点在这里连接，完整资料留在原仓库。
-                </p>
-              </div>
-              <span className="term-chip">2026 · 秋季学期</span>
-            </div>
-            <div className="source-grid">
-              {sources.map((s, i) => (
-                <article className="source-card" key={s.id}>
-                  <div className="source-card-top">
-                    <span className="source-number">0{i + 1}</span>
-                    <span className="course-tag">
-                      <GraduationCap size={14} />
-                      哥大课程
-                    </span>
-                  </div>
-                  <p className="source-code">{s.label}</p>
-                  <h3>{s.title}</h3>
-                  <p className="source-name">{s.name}</p>
-                  <div className="source-stats">
-                    <span>
-                      <strong>
-                        {
-                          recorded.filter((c) => c.sources.includes(s.id))
-                            .length
-                        }
-                      </strong>{' '}
-                      已收录
-                    </span>
-                    <span>
-                      {
-                        allConcepts.filter(
-                          (c) =>
-                            c.sources.includes(s.id) &&
-                            c.coverage === 'planned',
-                        ).length
-                      }{' '}
-                      后续主题
-                    </span>
-                  </div>
-                  <div className="source-actions">
-                    <button type="button" onClick={() => filterSource(s.id)}>
-                      在图谱中查看 <ArrowUpRight size={16} />
-                    </button>
-                    <a
-                      href={s.repository}
-                      target="_blank"
-                      rel="noreferrer"
-                      aria-label={`打开 ${s.label} 私有课程仓库`}
-                    >
-                      课程仓库 <ExternalLink size={14} />
-                    </a>
-                  </div>
-                  <span className="private-note">
-                    私有仓库 · 需要相应 GitHub 访问权限
-                  </span>
-                </article>
-              ))}
-              <article className="self-study-card">
-                <div className="self-icon">
-                  <Sparkles size={23} strokeWidth={1.5} />
-                </div>
-                <div>
-                  <p className="eyebrow">SELF-DIRECTED LEARNING</p>
-                  <h3>给好奇心留一个位置。</h3>
-                  <p>
-                    书籍、文章、在线课程与项目实践，都可以成为新的学习来源。
-                  </p>
-                  <span>暂无自学记录，后续持续补充。</span>
-                </div>
-              </article>
-            </div>
-          </section>
+          <SourceCatalog
+            sources={sources}
+            concepts={allConcepts}
+            onSelect={filterSource}
+          />
         </TabsContent>
       </Tabs>
       <footer>
@@ -657,7 +601,7 @@ export default function Home() {
               <div className="detail-body">
                 <section>
                   <h3>概念摘要</h3>
-                  <p>{detail.summary}</p>
+                  <p>{detail.summary || '概念摘要待补充。'}</p>
                 </section>
                 <section>
                   <h3>我的理解</h3>
@@ -670,27 +614,16 @@ export default function Home() {
                   <h3>学习来源</h3>
                   {detail.sources.map((id) => {
                     const s = sources.find((v) => v.id === id);
-                    return s ? (
-                      <a
-                        className="detail-source"
-                        key={id}
-                        href={`${s.repository}/blob/main/${s.reference}`}
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        <BookOpen size={18} />
-                        <div>
-                          <strong>{s.label}</strong>
-                          <span>{s.title} · 2026 Fall</span>
-                        </div>
-                        <ArrowUpRight size={17} />
-                      </a>
-                    ) : null;
+                    return s ? <SourceReference key={id} source={s} /> : null;
                   })}
                   <p className="detail-note">{detail.evidence}</p>
-                  <p className="detail-note">
-                    来源保留在私有课程仓库中，访问需相应权限。
-                  </p>
+                  {detail.sources.some(
+                    (id) => sources.find((s) => s.id === id)?.private,
+                  ) && (
+                    <p className="detail-note">
+                      部分来源为私有资料，访问需相应权限。
+                    </p>
+                  )}
                 </section>
                 <section>
                   <h3>
@@ -738,7 +671,7 @@ function EmptyResults({ self, clear }: { self: boolean; clear: () => void }) {
       <h3>{self ? '自学的部分，慢慢补上。' : '没有找到匹配的知识点'}</h3>
       <p>
         {self
-          ? '当前先记录本学期课程，之后再加入自主学习的内容。'
+          ? '目前还没有收录自主学习来源。新的书籍、文章与项目可以随时加入。'
           : '试试其他关键词、学习来源，或打开后续主题。'}
       </p>
       <button type="button" onClick={clear}>

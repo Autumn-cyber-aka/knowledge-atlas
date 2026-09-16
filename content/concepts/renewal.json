@@ -1,0 +1,22 @@
+{
+  "id": "renewal",
+  "title": "更新过程与更新奖励",
+  "english": "Renewal processes",
+  "domain": "statistics",
+  "tags": [],
+  "topic": "随机过程",
+  "sources": [
+    "stat4207"
+  ],
+  "coverage": "planned",
+  "mastery": "unassessed",
+  "summary": "以重复出现的随机周期组织过程，并研究长期事件频率及每单位时间的奖励。",
+  "personalNote": "",
+  "related": [
+    "poisson",
+    "expectation"
+  ],
+  "evidence": "后续大纲主题。",
+  "recordedAt": "2026-09-15",
+  "order": 30
+}

@@ -1,0 +1,15 @@
+{
+  "id": "coms6998",
+  "label": "COMS 6998 · LLM",
+  "title": "大语言模型与生成式 AI 系统",
+  "name": "Introduction to LLM based Generative AI Systems",
+  "kind": "course",
+  "term": "2026 Fall",
+  "private": true,
+  "order": 2,
+  "url": "https://github.com/Autumn-cyber-aka/26fall-coms6998-LLM",
+  "referenceUrl": "https://github.com/Autumn-cyber-aka/26fall-coms6998-LLM/blob/main/materials/COMSE6998_007_2026_3_syllabus.txt",
+  "institution": "哥大",
+  "format": "course",
+  "accessNote": "私有仓库 · 需要相应 GitHub 访问权限"
+}

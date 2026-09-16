@@ -1,0 +1,22 @@
+{
+  "id": "trees",
+  "title": "搜索树与平衡树",
+  "english": "Search trees",
+  "domain": "cs",
+  "tags": [],
+  "topic": "数据结构与算法",
+  "sources": [
+    "coms3134"
+  ],
+  "coverage": "planned",
+  "mastery": "unassessed",
+  "summary": "以树结构组织有序数据，并通过平衡约束控制查找、插入和删除的路径长度。",
+  "personalNote": "",
+  "related": [
+    "recursion",
+    "complexity"
+  ],
+  "evidence": "后续大纲主题。",
+  "recordedAt": "2026-09-15",
+  "order": 21
+}

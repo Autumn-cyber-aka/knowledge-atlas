@@ -1,0 +1,22 @@
+{
+  "id": "computability",
+  "title": "可计算性",
+  "english": "Computability",
+  "domain": "cs",
+  "tags": [],
+  "topic": "计算理论",
+  "sources": [
+    "coms3261"
+  ],
+  "coverage": "planned",
+  "mastery": "unassessed",
+  "summary": "研究哪些问题能够由算法解决，区分可识别、可判定与不可判定。",
+  "personalNote": "",
+  "related": [
+    "formal-languages",
+    "proofs"
+  ],
+  "evidence": "课程后续学习目标。",
+  "recordedAt": "2026-09-15",
+  "order": 25
+}

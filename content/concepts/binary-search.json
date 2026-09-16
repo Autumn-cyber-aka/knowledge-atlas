@@ -1,0 +1,22 @@
+{
+  "id": "binary-search",
+  "title": "二分查找",
+  "english": "Binary search",
+  "domain": "cs",
+  "tags": [],
+  "topic": "数据结构与算法",
+  "sources": [
+    "coms3134"
+  ],
+  "coverage": "recorded",
+  "mastery": "unassessed",
+  "summary": "在有序的搜索区间中不断排除一半候选项；区间边界与终止条件决定实现是否正确。",
+  "personalNote": "",
+  "related": [
+    "recursion",
+    "arrays"
+  ],
+  "evidence": "已发布大纲中的九月基础主题；学习进度待本人确认。",
+  "recordedAt": "2026-09-15",
+  "order": 6
+}

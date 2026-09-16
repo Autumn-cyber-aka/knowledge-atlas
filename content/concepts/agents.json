@@ -1,0 +1,22 @@
+{
+  "id": "agents",
+  "title": "工具调用与 Agent",
+  "english": "Tool use & agents",
+  "domain": "ai",
+  "tags": [],
+  "topic": "大模型应用",
+  "sources": [
+    "coms6998"
+  ],
+  "coverage": "planned",
+  "mastery": "unassessed",
+  "summary": "让模型通过工具获取信息或执行操作，并围绕目标组织多步决策。",
+  "personalNote": "",
+  "related": [
+    "rag",
+    "evaluation"
+  ],
+  "evidence": "后续大纲主题。",
+  "recordedAt": "2026-09-15",
+  "order": 42
+}

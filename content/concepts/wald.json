@@ -1,0 +1,22 @@
+{
+  "id": "wald",
+  "title": "Wald 等式",
+  "english": "Wald’s equation",
+  "domain": "statistics",
+  "tags": [],
+  "topic": "随机过程",
+  "sources": [
+    "stat4207"
+  ],
+  "coverage": "planned",
+  "mastery": "unassessed",
+  "summary": "在适当独立性、停止时刻与可积性条件下，联系随机项数之和的期望与单项期望。",
+  "personalNote": "",
+  "related": [
+    "expectation",
+    "renewal"
+  ],
+  "evidence": "后续大纲主题。",
+  "recordedAt": "2026-09-15",
+  "order": 31
+}

@@ -15,16 +15,40 @@
 
 ## 更新内容
 
-内容与界面分离，日常只需编辑 `content/`：
+内容按条目独立保存，界面自动汇总。后续添加课程、书、文章或项目，无需修改页面代码。
 
-| 文件 | 用途 |
+| 路径 | 用途 |
 | --- | --- |
-| `concepts.json` | 知识点：名称、领域、来源、摘要、个人笔记、掌握程度、关联 |
-| `sources.json` | 学习来源：哥大课程或自主学习 |
-| `domains.json` | 五个领域及其说明 |
-| `meta.json` | 记录起点、更新日期及排除项 |
+| `content/concepts/<id>.json` | 每个知识点一份，持续补充理解与关联 |
+| `content/sources/<id>.json` | 每个课程或自学来源一份 |
+| `content/domains.json` | 固定的五个领域 |
+| `content/meta.json` | 记录起点、更新日期和内容版本 |
+| `.generated/catalog.json` | 自动生成，勿手改、不提交 |
 
-新增知识点时使用稳定且唯一的 `id`，`related` 填其他知识点 ID；每个知识点只保留一份，跨领域归属放入 `tags`。新增自学来源时，`kind` 设为 `self`，并把知识点的 `sources` 关联到它。现有界面会自动纳入“自主学习”筛选。
+### 逐步积累
+
+1. 新增学习来源，比如一本自学书（以下仅为操作示例）：
+
+```sh
+pnpm atlas:new source --id example-book --title "我的自学书" --kind self --format book
+```
+
+2. 先搜索现有知识点。已有的概念，只需在其 `sources` 数组增加 `example-book`，再补充个人笔记；不要重复创建。
+3. 确实是新概念时创建条目：
+
+```sh
+pnpm atlas:new concept --id example-concept --title "新概念" --domain math --source example-book
+```
+
+4. 编辑生成的 JSON，补充摘要、关联和本人理解；更新 `content/meta.json` 的 `updatedAt`，运行 `pnpm check`。
+
+新增课程使用 `--kind course --format course --term "2027 Spring" --institution "哥大" --url <课程仓库地址>`；私有来源加 `--private`。书或个人笔记可以没有网址。完整选项见 `pnpm atlas:new --help`。
+
+每个条目有稳定且唯一的 `id`，`related` 填其他知识点 ID，跨领域归属放入 `tags`。课程与自学是来源类别，不是领域；同一知识点可以同时来自二者。课程、学期、来源数量与自学入口由数据自动汇总。
+
+新增命令不会覆盖已有条目，也不会发布网站。它让掌握状态保持 `unassessed`，摘要和个人理解留空。手动添加 JSON 同样支持；校验会检查 ID、来源、知识关联和日期。
+
+详见 [扩展设计](docs/architecture.md)。
 
 `coverage`：`recorded`（已收录）或 `planned`（后续主题）。
 
@@ -42,11 +66,12 @@ Node.js 22.13+，pnpm 11.19.0。
 pnpm install --frozen-lockfile
 pnpm dev
 pnpm check
+pnpm test
 pnpm build
 ```
 
 界面使用 React、Vinext 与 Shadcn。静态输出目录为 `dist/client/`；GitHub Pages 工作流设置 `PAGES_BASE_PATH=/knowledge-atlas`，确保项目路径下资源正确加载。Sites 预览使用根路径。
 
-`.github/workflows/pages.yml` 在 `main` 更新后校验内容、检查类型、构建并部署 GitHub Pages。阅读型网站无数据库、登录表单或外部运行时 API；不会在访客打开网页时访问你的私有课程仓库。
+`.github/workflows/pages.yml` 在 `main` 更新后校验内容、检查类型、运行扩展测试、构建并部署 GitHub Pages。阅读型网站无数据库、登录表单或外部运行时 API；不会在访客打开网页时访问你的私有课程仓库。
 
 `prepare-static.mjs` 修正当前固定 Vinext 版本在项目子路径下的导出路径：请求正确的项目首页生成 HTML/RSC，并把静态资源移到 Pages 挂载目录。根路径导出保持原样。

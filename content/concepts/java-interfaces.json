@@ -1,0 +1,22 @@
+{
+  "id": "java-interfaces",
+  "title": "Java 接口",
+  "english": "Java interfaces",
+  "domain": "engineering",
+  "tags": [],
+  "topic": "Java",
+  "sources": [
+    "coms3134"
+  ],
+  "coverage": "recorded",
+  "mastery": "unassessed",
+  "summary": "通过接口约定对象提供哪些操作，让使用方依赖行为契约，而不是某种具体实现。",
+  "personalNote": "",
+  "related": [
+    "generics",
+    "arrays"
+  ],
+  "evidence": "九月 Java 复习与抽象数据类型主题。",
+  "recordedAt": "2026-09-15",
+  "order": 10
+}

@@ -1,0 +1,22 @@
+{
+  "id": "graphs",
+  "title": "图与图算法",
+  "english": "Graph algorithms",
+  "domain": "cs",
+  "tags": [],
+  "topic": "数据结构与算法",
+  "sources": [
+    "coms3134"
+  ],
+  "coverage": "planned",
+  "mastery": "unassessed",
+  "summary": "用节点和边建模关系，通过遍历、最短路径与生成树等算法解决结构问题。",
+  "personalNote": "",
+  "related": [
+    "stacks-queues",
+    "sets"
+  ],
+  "evidence": "后续大纲主题。",
+  "recordedAt": "2026-09-15",
+  "order": 23
+}

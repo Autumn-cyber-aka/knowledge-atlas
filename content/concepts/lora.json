@@ -1,0 +1,21 @@
+{
+  "id": "lora",
+  "title": "参数高效微调 LoRA",
+  "english": "Low-rank adaptation",
+  "domain": "ai",
+  "tags": [],
+  "topic": "模型训练",
+  "sources": [
+    "coms6998"
+  ],
+  "coverage": "planned",
+  "mastery": "unassessed",
+  "summary": "保持基础权重固定，通过可训练的低秩更新适配任务，降低需要训练的参数量。",
+  "personalNote": "",
+  "related": [
+    "transformer"
+  ],
+  "evidence": "后续大纲主题。",
+  "recordedAt": "2026-09-15",
+  "order": 39
+}

@@ -1,0 +1,23 @@
+{
+  "id": "model-parallel",
+  "title": "模型并行",
+  "english": "Model parallelism",
+  "domain": "ai",
+  "tags": [
+    "engineering"
+  ],
+  "topic": "训练系统",
+  "sources": [
+    "coms6998"
+  ],
+  "coverage": "recorded",
+  "mastery": "unassessed",
+  "summary": "把模型的不同部分分配到多个设备，缓解单设备容量限制，同时引入设备间通信。",
+  "personalNote": "",
+  "related": [
+    "data-parallel"
+  ],
+  "evidence": "九月单机与分布式训练主题。",
+  "recordedAt": "2026-09-15",
+  "order": 17
+}

@@ -1,0 +1,15 @@
+{
+  "id": "coms3134",
+  "label": "COMS 3134",
+  "title": "数据结构与算法",
+  "name": "Data Structures in Java",
+  "kind": "course",
+  "term": "2026 Fall",
+  "private": true,
+  "order": 0,
+  "url": "https://github.com/Autumn-cyber-aka/26fall-coms3134",
+  "referenceUrl": "https://github.com/Autumn-cyber-aka/26fall-coms3134/blob/main/materials/syllabus-2026-09-13.txt",
+  "institution": "哥大",
+  "format": "course",
+  "accessNote": "私有仓库 · 需要相应 GitHub 访问权限"
+}

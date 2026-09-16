@@ -1,0 +1,21 @@
+{
+  "id": "rlhf",
+  "title": "人类反馈强化学习",
+  "english": "RLHF",
+  "domain": "ai",
+  "tags": [],
+  "topic": "模型对齐",
+  "sources": [
+    "coms6998"
+  ],
+  "coverage": "planned",
+  "mastery": "unassessed",
+  "summary": "利用偏好反馈建立奖励信号，再优化模型行为；需同时关注奖励偏差与评估。",
+  "personalNote": "",
+  "related": [
+    "evaluation"
+  ],
+  "evidence": "后续大纲主题。",
+  "recordedAt": "2026-09-15",
+  "order": 41
+}

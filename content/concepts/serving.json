@@ -1,0 +1,24 @@
+{
+  "id": "serving",
+  "title": "推理与服务优化",
+  "english": "Efficient LLM serving",
+  "domain": "ai",
+  "tags": [
+    "engineering"
+  ],
+  "topic": "推理系统",
+  "sources": [
+    "coms6998"
+  ],
+  "coverage": "planned",
+  "mastery": "unassessed",
+  "summary": "结合批处理、缓存与内存管理，在延迟、吞吐量和资源使用之间做权衡。",
+  "personalNote": "",
+  "related": [
+    "transformer",
+    "data-parallel"
+  ],
+  "evidence": "后续大纲主题。",
+  "recordedAt": "2026-09-15",
+  "order": 40
+}

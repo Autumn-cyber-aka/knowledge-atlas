@@ -1,0 +1,21 @@
+{
+  "id": "complexity",
+  "title": "算法复杂度",
+  "english": "Asymptotic complexity",
+  "domain": "cs",
+  "tags": [],
+  "topic": "数据结构与算法",
+  "sources": [
+    "coms3134"
+  ],
+  "coverage": "planned",
+  "mastery": "unassessed",
+  "summary": "用输入规模刻画算法的时间和空间成本，区分渐近上界、下界与紧确界。",
+  "personalNote": "",
+  "related": [
+    "binary-search"
+  ],
+  "evidence": "后续大纲主题。",
+  "recordedAt": "2026-09-15",
+  "order": 18
+}

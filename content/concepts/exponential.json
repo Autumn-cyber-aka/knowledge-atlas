@@ -1,0 +1,21 @@
+{
+  "id": "exponential",
+  "title": "指数分布",
+  "english": "Exponential distribution",
+  "domain": "statistics",
+  "tags": [],
+  "topic": "随机过程",
+  "sources": [
+    "stat4207"
+  ],
+  "coverage": "planned",
+  "mastery": "unassessed",
+  "summary": "一种连续等待时间分布，具有无记忆性，是泊松过程与连续时间模型的重要基础。",
+  "personalNote": "",
+  "related": [
+    "random-variables"
+  ],
+  "evidence": "后续大纲主题。",
+  "recordedAt": "2026-09-15",
+  "order": 28
+}

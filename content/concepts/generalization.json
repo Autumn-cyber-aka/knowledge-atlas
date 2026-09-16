@@ -1,0 +1,22 @@
+{
+  "id": "generalization",
+  "title": "泛化",
+  "english": "Generalization",
+  "domain": "ai",
+  "tags": [],
+  "topic": "学习原理",
+  "sources": [
+    "coms6998"
+  ],
+  "coverage": "recorded",
+  "mastery": "unassessed",
+  "summary": "关注模型在未见数据上的表现；训练集上的好结果并不自动意味着可以推广。",
+  "personalNote": "",
+  "related": [
+    "bias-variance",
+    "expectation"
+  ],
+  "evidence": "九月深度学习基础主题。",
+  "recordedAt": "2026-09-15",
+  "order": 14
+}

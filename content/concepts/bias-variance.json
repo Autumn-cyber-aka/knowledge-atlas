@@ -1,0 +1,22 @@
+{
+  "id": "bias-variance",
+  "title": "偏差与方差",
+  "english": "Bias & variance",
+  "domain": "ai",
+  "tags": [],
+  "topic": "学习原理",
+  "sources": [
+    "coms6998"
+  ],
+  "coverage": "recorded",
+  "mastery": "unassessed",
+  "summary": "区分模型的系统性误差与对训练样本变化的敏感性，帮助理解欠拟合和过拟合。",
+  "personalNote": "",
+  "related": [
+    "generalization",
+    "regularization"
+  ],
+  "evidence": "九月深度学习基础主题；仅收录，不代表已掌握。",
+  "recordedAt": "2026-09-15",
+  "order": 13
+}

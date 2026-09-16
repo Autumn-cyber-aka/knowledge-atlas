@@ -1,0 +1,22 @@
+{
+  "id": "hashing",
+  "title": "哈希表",
+  "english": "Hash tables",
+  "domain": "cs",
+  "tags": [],
+  "topic": "数据结构与算法",
+  "sources": [
+    "coms3134"
+  ],
+  "coverage": "planned",
+  "mastery": "unassessed",
+  "summary": "用哈希函数把键映射到存储位置，并通过冲突处理维持查找与更新。",
+  "personalNote": "",
+  "related": [
+    "arrays",
+    "complexity"
+  ],
+  "evidence": "后续大纲主题。",
+  "recordedAt": "2026-09-15",
+  "order": 22
+}

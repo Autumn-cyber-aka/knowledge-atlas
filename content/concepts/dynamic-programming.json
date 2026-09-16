@@ -1,0 +1,22 @@
+{
+  "id": "dynamic-programming",
+  "title": "动态规划",
+  "english": "Dynamic programming",
+  "domain": "cs",
+  "tags": [],
+  "topic": "算法设计",
+  "sources": [
+    "coms3134"
+  ],
+  "coverage": "planned",
+  "mastery": "unassessed",
+  "summary": "把问题分解为可复用的子问题，定义状态与转移，并保存结果以减少重复计算。",
+  "personalNote": "",
+  "related": [
+    "recursion",
+    "complexity"
+  ],
+  "evidence": "后续大纲主题。",
+  "recordedAt": "2026-09-15",
+  "order": 24
+}

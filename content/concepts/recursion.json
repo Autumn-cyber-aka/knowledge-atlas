@@ -1,0 +1,22 @@
+{
+  "id": "recursion",
+  "title": "递归",
+  "english": "Recursion",
+  "domain": "cs",
+  "tags": [],
+  "topic": "数据结构与算法",
+  "sources": [
+    "coms3134"
+  ],
+  "coverage": "recorded",
+  "mastery": "unassessed",
+  "summary": "把问题化为更小的同类问题，并用明确的终止条件结束求解。",
+  "personalNote": "",
+  "related": [
+    "binary-search",
+    "proofs"
+  ],
+  "evidence": "已发布大纲中的九月基础主题；学习进度待本人确认。",
+  "recordedAt": "2026-09-15",
+  "order": 5
+}

@@ -1,0 +1,22 @@
+{
+  "id": "queues",
+  "title": "排队模型",
+  "english": "Queueing models",
+  "domain": "statistics",
+  "tags": [],
+  "topic": "随机建模",
+  "sources": [
+    "stat4207"
+  ],
+  "coverage": "planned",
+  "mastery": "unassessed",
+  "summary": "用到达、服务与排队规则描述系统，分析等待时间和资源利用情况。",
+  "personalNote": "",
+  "related": [
+    "ctmc",
+    "poisson"
+  ],
+  "evidence": "后续大纲主题。",
+  "recordedAt": "2026-09-15",
+  "order": 34
+}

@@ -1,0 +1,22 @@
+{
+  "id": "p-np",
+  "title": "P、NP 与 NP 完全性",
+  "english": "P, NP & NP-completeness",
+  "domain": "cs",
+  "tags": [],
+  "topic": "计算理论",
+  "sources": [
+    "coms3261"
+  ],
+  "coverage": "planned",
+  "mastery": "unassessed",
+  "summary": "区分多项式时间内可求解与可验证的问题，并用归约研究 NP 完全问题。",
+  "personalNote": "",
+  "related": [
+    "reductions",
+    "complexity"
+  ],
+  "evidence": "课程后续学习目标。",
+  "recordedAt": "2026-09-15",
+  "order": 27
+}

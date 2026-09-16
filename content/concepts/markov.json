@@ -1,0 +1,21 @@
+{
+  "id": "markov",
+  "title": "离散时间马尔可夫链",
+  "english": "Discrete-time Markov chains",
+  "domain": "statistics",
+  "tags": [],
+  "topic": "随机过程",
+  "sources": [
+    "stat4207"
+  ],
+  "coverage": "planned",
+  "mastery": "unassessed",
+  "summary": "用当前状态决定下一步的条件分布，研究转移矩阵、状态分类与平稳分布。",
+  "personalNote": "",
+  "related": [
+    "conditional-probability"
+  ],
+  "evidence": "后续大纲主题。",
+  "recordedAt": "2026-09-15",
+  "order": 32
+}

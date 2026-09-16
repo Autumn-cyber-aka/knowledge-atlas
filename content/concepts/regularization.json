@@ -1,0 +1,22 @@
+{
+  "id": "regularization",
+  "title": "正则化",
+  "english": "Regularization",
+  "domain": "ai",
+  "tags": [],
+  "topic": "学习原理",
+  "sources": [
+    "coms6998"
+  ],
+  "coverage": "recorded",
+  "mastery": "unassessed",
+  "summary": "通过约束模型或训练过程抑制过拟合，具体选择需要结合任务与验证结果。",
+  "personalNote": "",
+  "related": [
+    "generalization",
+    "bias-variance"
+  ],
+  "evidence": "九月深度学习基础主题。",
+  "recordedAt": "2026-09-15",
+  "order": 15
+}

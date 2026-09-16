@@ -1,0 +1,22 @@
+{
+  "id": "formal-languages",
+  "title": "形式语言",
+  "english": "Formal languages",
+  "domain": "cs",
+  "tags": [],
+  "topic": "计算理论",
+  "sources": [
+    "coms3261"
+  ],
+  "coverage": "recorded",
+  "mastery": "unassessed",
+  "summary": "字母表上的有限符号序列称为字符串，字符串的集合称为语言。",
+  "personalNote": "",
+  "related": [
+    "sets",
+    "dfa"
+  ],
+  "evidence": "已发布课程摘要包含字母表、字符串与语言。",
+  "recordedAt": "2026-09-15",
+  "order": 7
+}

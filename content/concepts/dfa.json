@@ -1,0 +1,22 @@
+{
+  "id": "dfa",
+  "title": "有限自动机 DFA",
+  "english": "Deterministic finite automata",
+  "domain": "cs",
+  "tags": [],
+  "topic": "计算理论",
+  "sources": [
+    "coms3261"
+  ],
+  "coverage": "recorded",
+  "mastery": "unassessed",
+  "summary": "用有限状态和确定的转移规则读取输入，通过最终所处的状态判断是否接受字符串。",
+  "personalNote": "",
+  "related": [
+    "formal-languages",
+    "regular-languages"
+  ],
+  "evidence": "已发布课程摘要包含 DFA 的形式定义与识别语言。",
+  "recordedAt": "2026-09-15",
+  "order": 8
+}
