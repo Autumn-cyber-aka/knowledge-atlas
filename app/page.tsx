@@ -51,6 +51,7 @@ import {
   startLabel,
   type Concept,
 } from '@/lib/catalog';
+import { CourseOverview } from '@/components/atlas/course-overview';
 import { SourceCatalog } from '@/components/atlas/source-catalog';
 import { SourceReference } from '@/components/atlas/source-reference';
 
@@ -230,7 +231,7 @@ function KnowledgeMap({
 }
 
 export default function Home() {
-  const [tab, setTab] = useState('map');
+  const [tab, setTab] = useState('courses');
   const [domain, setDomain] = useState('all');
   const [source, setSource] = useState('all');
   const [query, setQuery] = useState('');
@@ -298,8 +299,21 @@ export default function Home() {
     setSource(id);
     setDomain('all');
     setQuery('');
-    setTab('map');
+    setIncludePlanned(false);
+    setTab('list');
   };
+  const activeSource = sources.find((s) => s.id === source);
+  const directoryGroups = activeSource
+    ? [...new Set(filtered.map((c) => c.topic))].map((topic) => ({
+        id: topic,
+        name: topic,
+        color: '#526857',
+        entries: filtered.filter((c) => c.topic === topic),
+      }))
+    : domains.map((d) => ({
+        ...d,
+        entries: filtered.filter((c) => c.domain === d.id),
+      }));
   const detailDomain = detail ? domainById.get(detail.domain) : null;
   const related = detail
     ? allConcepts.filter((c) => c.id !== detail.id && connected(detail, c))
@@ -355,6 +369,10 @@ export default function Home() {
             className="view-tabs"
             aria-label="知识浏览方式"
           >
+            <TabsTrigger value="courses">
+              <GraduationCap />
+              课程与自学
+            </TabsTrigger>
             <TabsTrigger value="map">
               <Network />
               知识地图
@@ -379,8 +397,28 @@ export default function Home() {
             )}
           </div>
         </div>
-        {tab !== 'sources' && (
+        {(tab === 'map' || tab === 'list') && (
           <section className="filters" aria-label="筛选知识点">
+            {activeSource && (
+              <div className="course-context">
+                <button
+                  type="button"
+                  onClick={() => {
+                    clear();
+                    setTab('courses');
+                  }}
+                >
+                  ← 返回课程与自学
+                </button>
+                <div>
+                  <span>
+                    {activeSource.label}
+                    {activeSource.term ? ` / ${activeSource.term}` : ''}
+                  </span>
+                  <h2>{activeSource.title}</h2>
+                </div>
+              </div>
+            )}
             <div className="domain-filters">
               <button
                 type="button"
@@ -456,15 +494,20 @@ export default function Home() {
             </div>
           </section>
         )}
+        <TabsContent value="courses">
+          <CourseOverview onSelect={filterSource} />
+        </TabsContent>
         <TabsContent value="map">
           <section className="map-surface">
             <div className="surface-header">
               <div>
                 <span className="eyebrow">THE CONNECTIONS</span>
                 <h2>
-                  {domain === 'all'
-                    ? '知识在这里相遇'
-                    : domainById.get(domain)?.name}
+                  {activeSource
+                    ? `${activeSource.title} · 知识关联`
+                    : domain === 'all'
+                      ? '知识在这里相遇'
+                      : domainById.get(domain)?.name}
                 </h2>
               </div>
               <span className="surface-hint">
@@ -491,8 +534,8 @@ export default function Home() {
         <TabsContent value="list">
           <section className="directory">
             {filtered.length ? (
-              domains.map((d) => {
-                const group = filtered.filter((c) => c.domain === d.id);
+              directoryGroups.map((d) => {
+                const group = d.entries;
                 return group.length ? (
                   <section key={d.id} className="directory-group">
                     <div className="directory-heading">

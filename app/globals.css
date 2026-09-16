@@ -1235,3 +1235,141 @@ footer > div {
     transition: none !important;
   }
 }
+
+/* Course-first overview: clear modules before individual concepts. */
+.course-overview {
+  padding: 28px 0;
+  display: grid;
+  gap: 36px;
+}
+.course-section-heading {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+.course-section-heading h2 {
+  font-size: 22px;
+  font-weight: 600;
+}
+.course-section-heading > span {
+  font-size: 14px;
+  color: #66716e;
+}
+.course-block-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+.course-block {
+  text-align: left;
+  background: #fff;
+  border: 1px solid #d8e0da;
+  border-radius: 12px;
+  padding: 26px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  transition:
+    border-color 0.15s,
+    box-shadow 0.15s;
+}
+.course-block:hover {
+  border-color: #648272;
+  box-shadow: 0 6px 20px #243b2e0a;
+}
+.course-block:focus-visible {
+  outline: 3px solid #638475;
+  outline-offset: 3px;
+}
+.course-block-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  color: #526857;
+  font-size: 14px;
+}
+.course-block-meta > span:first-child {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.course-block h3 {
+  font-size: 25px;
+  font-weight: 600;
+  margin: 22px 0 6px;
+  line-height: 1.35;
+}
+.course-block > p {
+  font-size: 14px;
+  color: #69756f;
+}
+.course-topic-preview {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 24px 0;
+}
+.course-topic-preview span {
+  background: #f1f5f2;
+  border-radius: 5px;
+  padding: 6px 10px;
+  font-size: 14px;
+  color: #42594b;
+}
+.course-block-footer {
+  margin-top: auto;
+  border-top: 1px solid #e4e9e5;
+  padding-top: 18px;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 14px;
+  color: #69756f;
+  flex-wrap: wrap;
+}
+.course-block-footer > span:last-child {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #325842;
+}
+.course-context {
+  display: flex;
+  align-items: flex-start;
+  gap: 26px;
+  padding: 4px 0 24px;
+}
+.course-context > button {
+  font-size: 14px;
+  color: #426451;
+  cursor: pointer;
+  padding: 8px 0;
+}
+.course-context > div > span {
+  font-size: 14px;
+  color: #69756f;
+}
+.course-context h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 4px;
+}
+.view-tabs {
+  flex-wrap: wrap;
+}
+@media (max-width: 700px) {
+  .course-block-grid {
+    grid-template-columns: 1fr;
+  }
+  .course-block {
+    padding: 22px;
+  }
+  .course-block h3 {
+    font-size: 23px;
+  }
+  .course-context {
+    flex-direction: column;
+    gap: 12px;
+  }
+}

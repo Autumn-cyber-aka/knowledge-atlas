@@ -71,7 +71,7 @@ export function SourceCatalog({
             </div>
             <div className="source-actions">
               <button type="button" onClick={() => onSelect(s.id)}>
-                在图谱中查看 <ArrowUpRight size={16} />
+                查看知识点 <ArrowUpRight size={16} />
               </button>
               {s.url && (
                 <a
